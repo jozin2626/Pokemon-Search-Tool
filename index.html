@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pokemon Search Tool</title>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+    </head>
+    <body>
+        <br>
+        <h1 id="heading">Pokemon Search Tool</h1>
+        <div id ="mainTable" style="padding: 5%;">
+            <div class="row">
+                <div class="col-sm-12"><p>
+                    Welcome to the Pokemon search tool!<br>
+                    Enter a Pokemon name to search for in the text box below and click 
+                    the search button to find information about it.<hr>
+                </p></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <label for="search">Enter Pokemon: </label>
+                    <input type="text" name="search" id="search"><br>
+                    <button type="button" class="btn btn-info" onclick="getInfo()">Search 🔎</button>
+                    <button type="button" class="btn btn-danger" onclick="reset()">Reset ❌</button>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-sm-2">
+                    <p>Name:</p>
+                    <p id="name"></p>
+                </div>
+                <div class="col-sm-2">
+                    <p>Image:</p>
+                    <img id="image" src="">
+                </div>
+                <div class="col-sm-2">
+                    <p>Type:</p>
+                    <p id="type"></p>
+                </div>
+                <div class="col-sm-2">
+                    <p>Abilities:</p>
+                    <p id="abilities"></p>
+                </div>
+                <div class="col-sm-2">
+                    <p>Height:</p>
+                    <p id="height"></p>
+                </div>
+                <div class="col-sm-2">
+                    <p>Weight: </p>
+                    <p id="weight"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-image: url("background.png");
+        }
+        #heading {
+            color: red;
+            text-align: center;
+        }
+    </style>
+    <script src="search.js"></script>
+    <script>
+        console.log(!localStorage)
+    </script>
+</html>
